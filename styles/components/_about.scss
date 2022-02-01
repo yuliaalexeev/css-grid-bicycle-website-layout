@@ -1,0 +1,27 @@
+.about{
+    background: $grey-light;
+    padding: 11rem 0;
+    grid-column: 1 / -1;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(6, 1fr);
+    @media (max-width: $mobile){
+        padding: 3rem 0;
+    }
+    &__inner{
+        grid-column: 2 / 6;    
+        @media (max-width: $mobile){
+            grid-column: 1 / -1; 
+        }
+    }
+    h2{
+        margin: 3rem 0;
+        letter-spacing: .3rem;
+        font-size: 1.8rem;
+    }
+    p{
+        line-height: 3rem;
+        font-size: 1.8rem;
+        color: $grey;
+    }
+}

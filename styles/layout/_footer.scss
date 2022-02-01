@@ -1,0 +1,50 @@
+.footer{
+    grid-column: 1 / -1;
+    background: $grey-light;
+    padding: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    color: $grey;
+    a{
+        color: $grey;
+    }
+    &__socials{
+        text-align: center;
+        svg{
+            fill: $white;
+            width: 20px;
+            height: 20px;
+        }
+        &--icon{
+            border-radius: 50%;
+            width: 35px;
+            height: 34px;
+            padding: 5px;
+            margin: 5px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+        &--twitter{
+            background-color: $twitter-color;
+            &:hover{
+                background-color: darken($twitter-color, 20%);
+            }
+        }
+        &--facebook{
+            background-color: $facebook-color;
+            &:hover{
+                background-color: darken($facebook-color, 20%);
+            }
+        }
+        &--pinterest{
+            background-color: $pinterest-color;
+            &:hover{
+                background-color: darken($pinterest-color, 20%);
+            }
+        }   
+    }
+}

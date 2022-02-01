@@ -1,0 +1,31 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    margin: 3rem auto;
+    width: 100%;
+    justify-content: center;
+    &__link{   
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $black;
+        font-weight: bold;
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        transition: all 0.3s;
+        margin: 0 2rem;
+        @media (max-width: $mobile){
+            margin: 0 1rem;
+        }
+        &:hover{
+            color: $primary-color;
+        }
+        &:nth-child(1)::after,
+        &:nth-child(4)::after{
+            content: ".";
+            margin-left: 4rem;
+            @media (max-width: $mobile){
+                margin-left: 1rem;
+            }
+        }
+    }      
+}

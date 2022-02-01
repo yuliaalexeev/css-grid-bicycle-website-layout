@@ -1,0 +1,23 @@
+@import "base/variables";
+@import "base/base";
+
+@import "components/about";
+@import "components/work";
+@import "components/newsletter";
+@import "components/shop";
+
+@import "layout/header";
+@import "layout/navigation"; 
+@import "layout/footer";
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.recommendation{
+    background: $grey-light;
+}
+
+
+

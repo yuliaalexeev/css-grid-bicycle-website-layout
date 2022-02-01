@@ -1,0 +1,11 @@
+.header{
+    background: url("../images/header.jpg") no-repeat center center;
+    background-size: cover; 
+    height: 100vh;
+    grid-column: 1 / -1;
+    &__logo{
+        @media (max-width: $mobile){
+            width: 80%;
+        }
+    }
+}
