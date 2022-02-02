@@ -1,4 +1,4 @@
-# Css grid bicycle website loyout
+# Css grid bicycle website layout
 Basic clean css grid layout
 
 Writted with BEM methodology.
